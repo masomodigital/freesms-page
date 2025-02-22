@@ -120,6 +120,33 @@
         .view-apps-btn:hover {
             background-color: #0056b3;
         }
+
+        .blink {
+            animation: blink 1.5s infinite alternate;
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            100% { opacity: 0.5; }
+        }
+
+        .marquee-container {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .marquee {
+            display: inline-block;
+            animation: marquee 35s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
     </style>
 </head>
 <body>
@@ -130,10 +157,20 @@
     <p><span class="attention">ATTENTION:</span> All messages will be sent via Sender ID <span class="highlight">MASOMO_LIB. </span> After payment, check your email for a RECEIPT. Ensure you click the LINK in your receipt to COMPLETE sign up before you can start sending messages.</p>
     
     <h3>SEND <span class="highlight-red">FREE</span> SMS DAILY & EARN BY SIGNING UP NEW USERS!!</h3>
+    <img src="https://i.imgur.com/fEyPYK1.png" alt="Promotional Image" width="200" height="200" class="blink">
     
+    <div class="marquee-container">
+        <div class="marquee">
+            "I no longer send please call me messages, this tool enables me to send real messages!" Mary, Nairobi. &nbsp;
+            "It's not just about sending FREE SMS, it's a business tool. I am making great income reselling this app..." Moses, Thika &nbsp;
+            "I have made this my full-time job. I walk around signing up users, and I make Ksh 900+ daily!" Ann, Nairobi &nbsp;
+            "It delivers SMS instantly! Very reliable & straight forward tool..." Ken, Mombasa
+        </div>
+    </div>
+
     <!-- Buttons Section -->
     <a href="https://masomodigital.github.io/sendsms-page/" class="button blue">SEND MESSAGE NOW</a>
-    <a href="https://paystack.com/pay/9l65pjt5iv" class="button black">SIGN UP NOW!</a>
+    <a href="https://paystack.com/pay/9l65pjt5iv" class="button black blink">SIGN UP NOW!</a>
     <a href="https://masomodigital.github.io/admin/" class="button red">ADMIN LOGIN</a>
     <a href="https://sites.google.com/view/groupscbc/home" class="button black">TODAY'S WORD OF ENCOURAGEMENT</a>
     <a href="https://masomodigital.github.io/freesmsresaleapp/" class="button green">RESALE THIS APP AND EARN</a>
